@@ -1,0 +1,11 @@
+ingress:
+  enabled: true
+  ingressClassName: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+  hostPath: /
+  hostRepo: nexus.local
+  tls:
+    - secretName: nexus-tls
+      hosts:
+        - nexus.local

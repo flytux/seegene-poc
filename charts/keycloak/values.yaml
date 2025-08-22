@@ -1,0 +1,12 @@
+auth:
+  adminUser: admin
+  adminPassword: "admin"
+
+ingress:
+  enabled: true
+  hostname: keycloak.local
+  ingressClassName: "nginx"
+
+postgresql:
+  enabled: true
+  architecture: replication
